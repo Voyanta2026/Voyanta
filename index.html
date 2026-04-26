@@ -1,28 +1,55 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyanta - Boek unieke reizen wereldwijd</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-<h1>Voyanta</h1>
-<p>Boek unieke reizen wereldwijd</p>
-<nav>
-<a href='index.html'>Home</a>
-<a href='about.html'>Over ons</a>
-<a href='contact.html'>Contact</a>
-</nav>
-<br><br>
-<input id='search' placeholder='Zoek stad...'>
-<button onclick='searchHotels()'>Zoeken</button>
-</header>
 
-<div class='container'>
-<h2>Resultaten</h2>
-<div id='results' class='grid'></div>
-</div>
+    <header>
+        <h1>Voyanta</h1>
+        <p>Boek unieke reizen wereldwijd</p>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Over ons</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
 
-<script src='app.js'></script>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Zoek stad...">
+            <button onclick="searchHotels()">Zoeken</button>
+        </div>
+
+        <h2>Populaire bestemmingen</h2>
+
+        <div id="results">
+            <div class="card">
+                <h3>Hotel Amsterdam Central</h3>
+                <p>Amsterdam</p>
+                <p>Vanaf €120 per nacht</p>
+                <a href="#" class="btn">Boek nu</a>
+            </div>
+
+            <div class="card">
+                <h3>Barcelona Beach Resort</h3>
+                <p>Barcelona</p>
+                <p>Vanaf €150 per nacht</p>
+                <a href="#" class="btn">Boek nu</a>
+            </div>
+
+            <div class="card">
+                <h3>Bali Jungle Villa</h3>
+                <p>Bali</p>
+                <p>Vanaf €200 per nacht</p>
+                <a href="#" class="btn">Boek nu</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
